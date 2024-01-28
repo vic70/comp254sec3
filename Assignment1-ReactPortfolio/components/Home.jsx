@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div>
-        <h1>Welcome to Victor Tse's home page</h1>
+        <h1 className="page-header">Welcome to Victor Tse's home page</h1>
         <p>
           Hi, I'm Victor Tse, a software developer with a passion for creating
           innovative and efficient solutions. I'm excited to share my work and

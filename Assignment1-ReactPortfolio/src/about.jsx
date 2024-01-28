@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <div style={{ textAlign: "center" }}>
-        <h1>About Me</h1>
+        <h1 className="page-header">About Me</h1>
         <img
           src={MyPhoto}
           alt="MyPhoto"

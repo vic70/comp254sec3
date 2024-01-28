@@ -17,8 +17,8 @@ export default function Layout() {
       <img src={logo} alt="logo" style={{ width: "100px" }} /> */}
       <nav>
         <Link to="/">Home</Link> | <Link to="/about">About</Link> |
-        <Link to="/education">Education</Link>|
-        <Link to="/project">Project</Link>| <Link to="/contact">Contact</Link>
+        <Link to="/service">Service</Link>|<Link to="/project">Project</Link>|{" "}
+        <Link to="/contact">Contact</Link>
       </nav>
       <hr />
     </>

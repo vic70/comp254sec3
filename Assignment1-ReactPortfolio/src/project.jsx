@@ -7,8 +7,8 @@ export default function Project() {
   return (
     <>
       <div>
-        <h1>Project</h1>
-        <nav style={{ float: "center" }}>
+        <h1 className="page-header">Project</h1>
+        <nav>
           <a href="#project1">Project 1</a>|<a href="#project2">Project 2</a> |
           <a href="#project3">Project 3</a>
         </nav>
