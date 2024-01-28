@@ -1,3 +1,31 @@
+import React from "react";
+import { Link } from "react-router-dom";
 export default function Home() {
-  return <p>Hello World!</p>;
+  return (
+    <>
+      <div>
+        <h1>Welcome to Victor Tse's home page</h1>
+        <p>
+          Hi, I'm Victor Tse, a software developer with a passion for creating
+          innovative and efficient solutions. I'm excited to share my work and
+          journey with you.
+        </p>
+        <h2>Explore my porfolio</h2>
+        <ul>
+          <li>
+            <Link to="/about">Learn more about Me</Link>
+          </li>
+          <li>
+            <Link to="/education">Check out my education</Link>
+          </li>
+          <li>
+            <Link to="/project">See the projects I've worked on</Link>
+          </li>
+          <li>
+            <Link to="/contact">Get in touch with me</Link>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
 }
