@@ -25,8 +25,9 @@ export default function About() {
           href="https://drive.google.com/file/d/1pjslGt71KRCTK4sSQzINt-4TYe8RaVXG/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ fontSize: "18px" }}
         >
-          View my resume
+          📰 View my resume 📰
         </a>
       </div>
     </>
