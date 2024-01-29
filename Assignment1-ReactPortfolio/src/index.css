@@ -1,3 +1,10 @@
+/*
+  File name: index.css
+  Student's Name: Yuen Chi Tse
+  StudentID: 301333561
+  Date: 01/28/2024
+*/
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -35,6 +42,7 @@ h1 {
   line-height: 1.1;
 }
 
+/* button styles */
 button {
   border-radius: 8px;
   border: 1px solid;
@@ -74,6 +82,8 @@ nav {
   font-size: x-large;
 }
 
+/* project page grid styles */
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -95,7 +105,7 @@ nav {
   font-size: 3em;
   text-align: center;
 }
-
+/* Contact styles */
 .contact-panel {
   padding: 20px;
   margin-bottom: 20px;
@@ -104,7 +114,6 @@ nav {
   background-color: #f9f9f9;
 }
 
-/* Contact.css */
 .contact-form {
   display: flex;
   flex-direction: column;

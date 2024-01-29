@@ -1,3 +1,9 @@
+/*
+  File name: project.jsx
+  Student's Name: Yuen Chi Tse
+  StudentID: 301333561
+  Date: 01/28/2024
+*/
 import React from "react";
 import Project1Image from "./images/project1.png";
 import Project2Image from "./images/project2.png";

@@ -1,6 +1,14 @@
+/*
+  File name: contact.jsx
+  Student's Name: Yuen Chi Tse
+  StudentID: 301333561
+  Date: 01/28/2024
+*/
+
 import React from "react";
 
 export default function Contact() {
+  //function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
     // Capture form data
@@ -15,8 +23,7 @@ export default function Contact() {
 
   return (
     <>
-      <h1 className="page-header">Contact</h1>
-
+      <h1 className="page-header">Contact Me</h1>
       <div className="contact-panel">
         <h2>My Contact Information</h2>
         <p>
@@ -34,7 +41,6 @@ export default function Contact() {
           LinkedIn
         </a>
       </div>
-
       <div className="contact-panel">
         <h2>Leave Me A Message</h2>
         <form onSubmit={handleSubmit} className="contact-form">

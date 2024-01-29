@@ -1,3 +1,10 @@
+/*
+  File name: about.jsx
+  Student's Name: Yuen Chi Tse
+  StudentID: 301333561
+  Date: 01/28/2024
+*/
+
 import React from "react";
 import MyPhoto from "./images/MyPhoto.jpg";
 export default function About() {

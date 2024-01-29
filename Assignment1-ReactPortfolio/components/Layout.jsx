@@ -1,3 +1,9 @@
+/*
+  File name: Layout.jsx
+  Student's Name: Yuen Chi Tse
+  StudentID: 301333561
+  Date: 01/28/2024
+*/
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../src/images/logo.png";
