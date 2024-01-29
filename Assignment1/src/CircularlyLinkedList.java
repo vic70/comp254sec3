@@ -29,7 +29,7 @@
  * @author Roberto Tamassia
  * @author Michael H. Goldwasser
  */
-public class CircularlyLinkedList<E> {
+public class CircularlyLinkedList<E> implements Cloneable{
   //---------------- nested Node class ----------------
   /**
    * Singly linked node, which stores a reference to its element and
@@ -179,7 +179,28 @@ public class CircularlyLinkedList<E> {
     sb.append(")");
     return sb.toString();
   }
-  
+
+
+  public CircularlyLinkedList<E> clone() throws CloneNotSupportedException{
+    CircularlyLinkedList<E> other = (CircularlyLinkedList<E>) super.clone();
+    if(size >0){
+      other.tail = new Node<> (tail.getElement(),null);
+      Node<E> walk = tail.getNext();
+      Node<E> otherTail = other.tail;
+      while (walk!=tail){
+        Node<E> newest = new Node<>(walk.getElement(),null);
+        otherTail.setNext(newest);
+        otherTail=newest;
+        walk=walk.getNext();
+      }
+      otherTail.setNext(other.tail);
+
+    }
+    return other;
+
+
+  }
+
 //main method
   public static void main(String[] args)
   {
@@ -197,6 +218,12 @@ public class CircularlyLinkedList<E> {
 	  circularList.rotate();
 	  System.out.println(circularList);
 
-	  //
+// test method
+    try {
+      CircularlyLinkedList<String> clonedList = circularList.clone();
+      System.out.println("Cloned list: " + clonedList);
+    } catch (CloneNotSupportedException e) {
+      System.out.println("Clone not supported");
+    }
   }
 }
